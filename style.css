@@ -1,53 +1,56 @@
 body {
+    padding:1px;
     background: #fff;
-    }
+}
 
 #produtos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
+}
+
+    .pizza {
+    background: url('IMG-20241205-WA0002.jpg');
     }
- 
-        .pizza {
-            background: url('IMG-20241205-WA0002.jpg');
-        }
-    
-        .promocao {
-            background: url('IMG-20241204-WA0012.jpg');
-        }
-    
-        .esfiha {
-            background: url('IMG-20241205-WA0003.jpg');
-        }
-    
-        .fogazza {
-            background: url('IMG-20241204-WA0007.jpg');
-        }
-    
-        .beirute {
-            background: url('IMG-20241204-WA0010.jpg');
-        }
-    
-        .pastel {
-            background: url('IMG-20241204-WA0008.jpg');
-        }
+
+    .promocao {
+    background: url('IMG-20241204-WA0012.jpg');
+    }
+
+    .esfiha {
+    background: url('IMG-20241205-WA0003.jpg');
+    }
+
+    .fogazza {
+    background: url('IMG-20241204-WA0007.jpg');
+    }
+
+    .beirute {
+    background: url('IMG-20241204-WA0010.jpg');
+    }
+
+    .pastel {
+    background: url('IMG-20241204-WA0008.jpg');
+    }
 
     .produto {
         height: 170px;
         border-radius: 10px;
         background-size: cover;
     }
-    
-        .titulo {
-            margin-top: 141px;
-            background: #000;
-            color: #fff;
-            padding: 5px 10px;
-            font-size: 16px;
-            font-family: 'Trebuchet MS';
-            opacity: 0.85;
-            border-radius: 0px 0px 10px 10px;
-        }
+
+    .titulo {
+        margin-top: 141px;
+        background: #000;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-family: 'Trebuchet MS';
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        opacity: 0.85;
+        border-radius: 0px 0px 10px 10px;
+    }
 
     .produto:hover {
         opacity: 0.9;
@@ -55,9 +58,73 @@ body {
         transition: all 0.3s ease;
         cursor: pointer;
     }
+
+
+header#empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d10a00;
+}
+
+    .icone {
+        float: right;
+    }
+
+    .linkcomp {
+        margin-right: 20px;
+        text-decoration: none;
+        color: inherit;
     
+    }
+
+#informacoes {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    font-size: small;
+}
+
+    .ponto {
+        margin-right: 35px;
+        margin: 0%;
+    }
+
+    .pedidominimo {
+        margin-right: 35px;
+    }
+
+footer {
+    padding: 0%;
+    background: #fff;
+}
+
+    #menunavegacao {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        background: #fff;
+    }
+    .linkmenu {
+
+    }
+
 @media screen and (min-width: 400px) {
     #produtos {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #informacoes {
+        font-size: large;
+    }
+    
+    .ponto {
+        margin-right: 300px;
+        margin: 0%;
+    }
+    
+    .pedidominimo {
+        margin-right: 300px;
     }
 }
