@@ -1,0 +1,57 @@
+body {
+    background: #fff;
+    }
+
+#produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    }
+ 
+        .pizza {
+            background: url('IMG-20241205-WA0002.jpg');
+        }
+    
+        .promocao {
+            background: url('IMG-20241204-WA0012.jpg');
+        }
+    
+        .esfiha {
+            background: url('IMG-20241205-WA0003.jpg');
+        }
+    
+        .fogazza {
+            background: url('IMG-20241204-WA0007.jpg');
+        }
+    
+        .beirute {
+            background: url('IMG-20241204-WA0010.jpg');
+        }
+    
+        .pastel {
+            background: url('IMG-20241204-WA0008.jpg');
+        }
+
+    .produto {
+        height: 170px;
+        border-radius: 10px;
+        background-size: cover;
+    }
+    
+        .titulo {
+            background: #000;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            opacity: 0.85;
+            margin-top: 142px;
+            
+        }
+    
+    @media screen and (min-width: 400px) {
+        #produtos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
