@@ -2,7 +2,7 @@ ATIVIDADE DO CURSO DE PROGRAMAÇÃO E DESENVOLVIMENTO WEB FULLSTACK - ESCOLA PIX
 
 Atividade de HTML e CSS para fazer um site com resolução para mobile, tablet, netbook e pc.
 
-O professor entregou o HTML e CSS feitos até aqui:
+O professor fez o código HTML E CSS junto com a turma até aqui:
 
 HTML: 
 <!DOCTYPE html>
