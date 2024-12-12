@@ -3,34 +3,35 @@ body {
     background: #fff;
 }
 
+
 #produtos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 
     .pizza {
-    background: url('IMG-20241205-WA0002.jpg');
+        background: url('IMG-20241205-WA0002.jpg');
     }
 
     .promocao {
-    background: url('IMG-20241204-WA0012.jpg');
+        background: url('IMG-20241204-WA0012.jpg');
     }
 
     .esfiha {
-    background: url('IMG-20241205-WA0003.jpg');
+        background: url('IMG-20241205-WA0003.jpg');
     }
 
     .fogazza {
-    background: url('IMG-20241204-WA0007.jpg');
+        background: url('IMG-20241204-WA0007.jpg');
     }
 
     .beirute {
-    background: url('IMG-20241204-WA0010.jpg');
+        background: url('IMG-20241204-WA0010.jpg');
     }
 
     .pastel {
-    background: url('IMG-20241204-WA0008.jpg');
+        background: url('IMG-20241204-WA0008.jpg');
     }
 
     .produto {
@@ -96,23 +97,29 @@ header#empresa {
     }
 
 footer {
-    padding: 0%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: #fff;
+    padding: 10px;
+    z-index: 999;
 }
 
-    #menunavegacao {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 5px;
-        background: #fff;
-    }
     .linkmenu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 20px;
+        background: #fff;
+        }
 
-    }
 
-@media screen and (min-width: 400px) {
+    /* Começo da Tela PC */
+@media screen and (min-width: 1281px) {
+
     #produtos {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
     }
 
     #informacoes {
@@ -128,3 +135,50 @@ footer {
         margin-right: 300px;
     }
 }
+    /* Fim da tela PC */
+
+    /* Começo da Tela Netbook */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    #produtos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #informacoes {
+        font-size: large;
+    }
+    
+    .ponto {
+        margin-right: 300px;
+        margin: 0%;
+    }
+    
+    .pedidominimo {
+        margin-right: 300px;
+    }
+}
+    /* Fim da Tela Netbook */
+
+    /* Começo da Tela Tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #produtos {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    #informacoes {
+        font-size: large;
+    }
+    
+    .ponto {
+        margin-right: 300px;
+        margin: 0%;
+    }
+    
+    .pedidominimo {
+        margin-right: 300px;
+    }
+
+}
+    /* Final da Tela Tablets */
