@@ -1,8 +1,9 @@
+    /* Começo da Tela CELULAR */
 body {
     padding:1px;
     background: #fff;
+    padding-bottom: 60px;
 }
-
 
 #produtos {
     display: grid;
@@ -34,6 +35,22 @@ body {
         background: url('IMG-20241204-WA0008.jpg');
     }
 
+    .salgado {
+        background: url('IMG-20241205-WA0001.jpg');
+    }
+
+    .sanduiche {
+        background: url('IMG-20241204-WA0013.jpg');
+    }
+
+    .maionese {
+        background: url('IMG-20241204-WA0014.jpg');
+    }
+
+    .refri {
+        background: url('IMG-20241204-WA0009.jpg');
+    }
+
     .produto {
         height: 170px;
         border-radius: 10px;
@@ -41,13 +58,13 @@ body {
     }
 
     .titulo {
-        margin-top: 141px;
+        margin-top: 143px;
         background: #000;
         color: #fff;
         padding: 5px 10px;
-        font-size: 16px;
+        font-size: 15px;
         font-family: 'Trebuchet MS';
-        letter-spacing: 4px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         opacity: 0.85;
         border-radius: 0px 0px 10px 10px;
@@ -113,13 +130,14 @@ footer {
         gap: 20px;
         background: #fff;
         }
-
+    /* Fim da Tela CELULAR */
 
     /* Começo da Tela PC */
 @media screen and (min-width: 1281px) {
 
     #produtos {
         grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
     }
 
     #informacoes {
@@ -137,11 +155,12 @@ footer {
 }
     /* Fim da tela PC */
 
-    /* Começo da Tela Netbook */
+    /* Começo da Tela NETBOOK */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 
     #produtos {
         grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
     }
 
     #informacoes {
@@ -157,14 +176,14 @@ footer {
         margin-right: 300px;
     }
 }
-    /* Fim da Tela Netbook */
+    /* Fim da Tela NETBOOK */
 
-    /* Começo da Tela Tablets */
+    /* Começo da Tela TABLETS */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
     #produtos {
         grid-template-columns: repeat(3, 1fr);
-
+        gap: 5px;
     }
 
     #informacoes {
@@ -181,4 +200,4 @@ footer {
     }
 
 }
-    /* Final da Tela Tablets */
+    /* Final da Tela TABLETS */
